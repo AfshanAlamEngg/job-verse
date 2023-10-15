@@ -8,6 +8,6 @@
         @vite('resources/css/app.css')
      </head>
     <body>
-        <div class="text-4xl">This will be big.</div>
+        {{ $slot }}
     </body>
 </html>
