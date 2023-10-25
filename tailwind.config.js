@@ -9,6 +9,6 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require(id: "@tailwindcss/forms")
+    require('@tailwindcss/forms')
   ],
 }
