@@ -33,8 +33,13 @@
           </a>
         </div>
       </div>
-
+      
       <x-button class="w-full bg-green-50">Login</x-button>
+      <div class="my-8  text-center" >
+        <a href="{{ route('register.show') }}" class="text-indigo-600 hover:underline">
+          Don't have an account? Sign Up Here
+        </a>
+      </div>
     </form>
   </x-card>
 </x-layout>

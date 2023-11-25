@@ -22,7 +22,7 @@ class JobController extends Controller
         );
 
         return view(
-            'job.index',
+            'jobs.index',
             ['jobs' => Job::with('employer')->latest()->filter($filters)->get()]
         );
     }
@@ -34,7 +34,7 @@ class JobController extends Controller
     {
         $this->authorize('view', $job);
         return view(
-            'job.show',
+            'jobs.show',
             ['job' => $job->load('employer.jobs')]
         );
     }
