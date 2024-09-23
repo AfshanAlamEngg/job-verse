@@ -24,16 +24,24 @@ composer install
 ```
 
 Install Node.js dependencies:
+```bash
 npm install
+```
 
 Set up environment variables: Copy the .env.example file to .env and update the necessary environment variables.
+```bash
 cp .env.example .env
+```
 
 Generate application key:
+```
 php artisan key:generate
+```
 
 Run database migrations:
+```
 php artisan migrate
+```
 
 Docker Setup
 Create a docker-compose.yml file: Add the following content to set up MySQL and Adminer services:
