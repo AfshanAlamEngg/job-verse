@@ -45,6 +45,7 @@ php artisan migrate
 
 Docker Setup
 Create a docker-compose.yml file: Add the following content to set up MySQL and Adminer services:
+```
 version: "3.9"
 services:
   mysql:
@@ -60,18 +61,19 @@ services:
     restart: always
     ports:
       - 8080:8080
-
+```
 Start Docker services:
+```
 docker-compose up -d
-
+```
 Setting Up Tailwind CSS
 Install Tailwind CSS and its dependencies:
+```
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
-
+```
 Configure Tailwind CSS: Update the tailwind.config.js file to include the paths to your template files:
-JavaScript
-
+```
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -84,24 +86,24 @@ module.exports = {
   },
   plugins: [],
 }
-AI-generated code. Review and use carefully. More info on FAQ.
+```
 Add Tailwind directives to your CSS: In your ./resources/css/app.css file, add the following lines:
-CSS
-
+```
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-AI-generated code. Review and use carefully. More info on FAQ.
+```
 Build your CSS: Run the following command to compile your CSS:
+```
 npm run dev
-
+```
 Vite Configuration
 Install Vite and Laravel Vite Plugin:
+```
 npm install --save-dev vite laravel-vite-plugin
-
+```
 Create Vite configuration file: Create a vite.config.js file in the root of your project and add the following configuration:
-JavaScript
-
+```
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 
@@ -113,12 +115,15 @@ export default defineConfig({
         }),
     ],
 });
-AI-generated code. Review and use carefully. More info on FAQ.
+```
 Running the Application
 Start the development server:
+```
 php artisan serve
-
+```
 Access the application: Open your browser and navigate to http://localhost:8000.
+
+
 Usage
 You can now start building your application using Laravel and Tailwind CSS. Use Tailwind’s utility classes to style your components and pages.
 
