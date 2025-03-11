@@ -3,6 +3,20 @@ This project is a web application built using Laravel and Tailwind CSS.
 
 Follow the steps below to set up and run the application on your local machine.
 
+## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Docker Setup](#docker-setup)
+- [Running the Application](#running-the-application)
+- [Note: Add fake data for testing the Application](#note-add-fake-data-for-testing-the-application)
+- [Note: For Adminer](#note-for-adminer)
+- [Note: Final Output](#note-final-output)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+
 ## Prerequisites
 Before you begin, ensure you have the following installed on your system:
 
@@ -100,7 +114,10 @@ You can now start building your application using Laravel and Tailwind CSS. Use 
 ## Contributing
 If you wish to contribute to this project, please fork the repository and create a pull request with your changes.
 
-License
+## License
 This project is licensed under the MIT License.
 
-This rearrangement places the Docker setup before the Tailwind CSS setup, which might be more logical since Docker is part of the initial environment setup. Let me know if you have any other preferences or changes in mind!
+## Contact
+For any questions or suggestions, feel free to reach out:
+- **Email:** afshanalamengg@gmail.com
+- **GitHub:** [AfshanAlamEngg](https://github.com/AfshanAlamEngg)
