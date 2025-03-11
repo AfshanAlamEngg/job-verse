@@ -38,11 +38,6 @@ Generate application key:
 php artisan key:generate
 ```
 
-Run database migrations:
-```
-php artisan migrate
-```
-
 ## Docker Setup
 Create a docker-compose.yml file: Add the following content to set up MySQL and Adminer services:
 ```
@@ -66,62 +61,37 @@ Start Docker services:
 ```
 docker-compose up -d
 ```
-## Setting Up Tailwind CSS
-Install Tailwind CSS and its dependencies:
+
+Run database migrations:
 ```
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
+php artisan migrate
 ```
-Configure Tailwind CSS: Update the tailwind.config.js file to include the paths to your template files:
-```
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./resources/**/*.blade.php",
-    "./resources/**/*.js",
-    "./resources/**/*.vue",
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-```
-Add Tailwind directives to your CSS: In your ./resources/css/app.css file, add the following lines:
-```
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
+
 Build your CSS: Run the following command to compile your CSS:
 ```
 npm run dev
 ```
-## Vite Configuration
-Install Vite and Laravel Vite Plugin:
-```
-npm install --save-dev vite laravel-vite-plugin
-```
-Create Vite configuration file: Create a vite.config.js file in the root of your project and add the following configuration:
-```
-import { defineConfig } from 'vite';
-import laravel from 'laravel-vite-plugin';
 
-export default defineConfig({
-    plugins: [
-        laravel({
-            input: ['resources/css/app.css', 'resources/js/app.js'],
-            refresh: true,
-        }),
-    ],
-});
-```
 ## Running the Application
 Start the development server:
 ```
 php artisan serve
 ```
 Access the application: Open your browser and navigate to http://localhost:8000.
+
+## Note: Add fake data for testing the Application
+Add fake records to the application for testing:
+```
+php artisan db:seed
+```
+
+## Note: For Adminer
+Write "mysql" for server in place of "db" like the below image:
+![alt text](image.png)
+
+## Note: Final Output
+Final output will look like the below image:
+![alt text](image-1.png)
 
 
 ## Usage
