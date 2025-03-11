@@ -28,8 +28,8 @@ Before you begin, ensure you have the following installed on your system:
 ## Installation
 Clone the repository:
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/AfshanAlamEngg/job-verse.git
+cd job-verse
 ```
 
 Install PHP dependencies:
@@ -53,24 +53,7 @@ php artisan key:generate
 ```
 
 ## Docker Setup
-Create a docker-compose.yml file: Add the following content to set up MySQL and Adminer services:
-```
-version: "3.9"
-services:
-  mysql:
-    image: mariadb:10.8.3
-    command: --default-authentication-plugin=mysql_native_password
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: # some password
-    ports:
-      - 3306:3306
-  adminer:
-    image: adminer
-    restart: always
-    ports:
-      - 8080:8080
-```
+
 Start Docker services:
 ```
 docker-compose up -d
