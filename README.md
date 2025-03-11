@@ -1,9 +1,7 @@
 # JobVerse
-This project is a web application built using Laravel and Tailwind CSS. 
-
-Follow the steps below to set up and run the application on your local machine.
 
 ## Table of Contents
+- [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Docker Setup](#docker-setup)
@@ -16,6 +14,20 @@ Follow the steps below to set up and run the application on your local machine.
 - [License](#license)
 - [Contact](#contact)
 
+
+## Introduction
+
+Job Verse is an online job portal that brings together candidates, recruiters, TPOs (Training
+and Placement Officers), and administrators to streamline the job searching and hiring process.
+The platform simplifies recruitment, making it easier and more efficient for all parties involved,
+saving their time and effort.
+
+Candidates can create detailed profiles to attract recruiters, who gain access to a vast talent
+pool. TPOs can use the platform to guide students toward career opportunities.The platform
+offers user-friendly tools for candidates to apply to multiple positions easily, recruiters to
+manage job listings, and TPOs to monitor student progress.
+
+Follow the steps below to set up and run the application on your local machine.
 
 ## Prerequisites
 Before you begin, ensure you have the following installed on your system:
